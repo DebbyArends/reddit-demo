@@ -1,12 +1,35 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
+import axios from "axios";
 
 function Home() {
+const [posts, setPosts] = useState([])
+
+    useEffect( () => {
+        async function fetchReddit() {
+            try{
+                const result = await axios.get('https://www.reddit.com/hot.json?limit=15')
+                console.log(result.data.data.children)
+                setPosts(result.data.data.children)
+            }
+            catch (e) {
+                console.error(e)
+            }
+        }
+        fetchReddit(posts);
+    }, [])
+
 
     return (
         <>
             <h1>Home</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consequuntur doloremque eligendi hic
-                molestiae odio officiis repellendus unde veniam vero!</p>
+            {posts && posts.map((post) => {
+                return (
+                    <ul>
+                        <li key={post.data.id}>
+                        {post.data.title}
+                        </li>
+                    </ul>)
+            })}
         </>
     )
 }

@@ -1,9 +1,9 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
-import './Navigation.css'
-import logoReddit from "../assets/logo-reddit.png"
+import './Header.css'
+import logoReddit from "../../assets/logo-reddit.png"
 
-function Navigation() {
+function Header() {
 
     return(
         <>
@@ -28,4 +28,4 @@ function Navigation() {
     )
 }
 
-export default Navigation
+export default Header

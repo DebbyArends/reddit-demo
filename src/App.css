@@ -12,9 +12,11 @@
   box-sizing: border-box;
 }
 
-h1 {
-  font-family: 'Quicksand', sans-serif;
-}
+/*h1 {*/
+/*  font-family: 'Quicksand', sans-serif;*/
+/*  color: #292929;*/
+/*  font-size: 36px;*/
+/*}*/
 
 p {
   font-family: 'Roboto Condensed', sans-serif;

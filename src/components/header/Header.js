@@ -10,18 +10,23 @@ function Header() {
             <header className="nav-outer-container">
                 <div className="nav-inner-container">
                     <nav>
-                        <ul>
+                        <ul className="navigation-container">
                             <li>
-                                <NavLink exact to="/" activeClassName="App-link">Home</NavLink>
+                                <h4>
+                                    <NavLink exact to="/" className="navigation" activeClassName="App-link">Hottest posts</NavLink>
+                                </h4>
                             </li>
                             <li>
-                                <NavLink to="/subreddit/:subredditId" activeClassName="App-link">Subreddit</NavLink>
+                                <h4>
+                                    <NavLink to="/subreddit/:subredditId"  className="navigation" activeClassName="App-link">Reddit</NavLink>
+                                </h4>
                             </li>
                         </ul>
                     </nav>
-                    <div className="container-logo">
+                        <div className="container-logo">
                         <img src={logoReddit} alt="reddit logo" className="logo-reddit"/>
-                    </div>
+                        <h1 className="logo-name">Reddit</h1>
+                        </div>
                 </div>
             </header>
         </>

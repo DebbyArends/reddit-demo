@@ -1,0 +1,19 @@
+.footer-outer-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #292929;
+    margin-top: 50px;
+}
+
+.footer-inner-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-basis: 50px;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+}

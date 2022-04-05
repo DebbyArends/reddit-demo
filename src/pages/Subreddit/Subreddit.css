@@ -1,0 +1,36 @@
+.back-icon {
+    width: 20px;
+    height: 20px;
+    fill: #dd3038;
+}
+
+.subreddit-outercontainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    margin: 100px 0 100px 0;
+}
+.Subreddit-innercontainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+.backHome {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+h1 {
+    padding: 30px 0 5px 0;
+}
+
+.button-back {
+    border: 0 solid transparent;
+    outline: none;
+    background-color: transparent;
+    color: #dd3038;
+    text-decoration: underline 2px solid #dd3038;
+}

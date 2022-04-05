@@ -1,9 +1,9 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
 import './Header.css'
-import logoReddit from "../../assets/logo-reddit.png"
 
-function Header() {
+
+function Header({src, title, specifications}) {
 
     return(
         <>
@@ -24,8 +24,9 @@ function Header() {
                         </ul>
                     </nav>
                         <div className="container-logo">
-                        <img src={logoReddit} alt="reddit logo" className="logo-reddit"/>
-                        <h1 className="logo-name">Reddit</h1>
+                            {src ?<img src={src} alt="reddit logo" className="logo-reddit"/>: ''}
+                        <h1 className="logo-name">{title}</h1>
+                            <p className="subreddit-specifications">{specifications}</p>
                         </div>
                 </div>
             </header>
